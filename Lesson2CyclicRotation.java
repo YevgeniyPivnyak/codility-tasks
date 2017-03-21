@@ -10,7 +10,8 @@ public class Lesson2CyclicRotation {
         }
         for (int i = 0; i < Array1.length; i++) {
             System.out.print(Array1[i] + " ");
-        }System.out.println();
+        }
+        System.out.println();
 
 
         shiftArray(Array1, 2);
@@ -25,15 +26,19 @@ public class Lesson2CyclicRotation {
 
             for (int j = 0; j < Array2.length; j++) {
                 System.out.print(Array2[j] + " ");
-            }System.out.println();
+            }
+            System.out.println();
 //
 //            System.arraycopy(Array1, shift, Array2, 0, length - shift);
 //
 //            System.arraycopy(Array1, 0, Array2, length - shift, shift);
 
             for (int i = 0; i < Array1.length; i++) {
-                Array2[i+shift]=Array1[i];
-//                System.out.println(Array2[0] + " " + Array2[1] + " " + Array2[3]);
+
+                Array2[i+shift] = Array1[i];
+                System.out.println(Array2[0] + " " + Array2[1] + " " + Array2[3] + " " + Array2[4] + " " + Array2[5] +
+                        " " + Array2[6] + " " + Array2[7] + " " + Array2[8] + " " + Array2[9]);
+
             }
 
             return Array2;

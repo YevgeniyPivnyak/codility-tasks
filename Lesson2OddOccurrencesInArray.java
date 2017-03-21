@@ -3,7 +3,7 @@ public class Lesson2OddOccurrencesInArray {
     public static void main(String[] args) {
 
         int[] Array11 = new int[11];
-        int[] Array12 = new int[11];
+        int[] Array12;
 
         Array11[0] = 1;
         Array11[1] = 2;
@@ -26,12 +26,15 @@ public class Lesson2OddOccurrencesInArray {
         for (int j = 0; j < Array12.length; j++) {
             System.out.print(Array12[j] + " ");
         }
+        System.out.println();
+        System.out.println("////////////////////////////////////");
+
         unpairedArray(Array11, Array12);
 
     }
 
     public static int unpairedArray(int[] Array11, int[] Array12) {
-        System.out.println("////////////////////////////////////");
+
         for (int i = 0; i < Array11.length; i++) {
 //            System.out.println(i);
             int count = 0;
@@ -40,7 +43,7 @@ public class Lesson2OddOccurrencesInArray {
 
                 System.out.println(i);
                 if (i == j) {count++; }
-            }if (count == 2) {
+            }if (count == 1) {
                 return i;
             }
         }
